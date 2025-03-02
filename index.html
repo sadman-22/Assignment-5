@@ -18,10 +18,11 @@
      <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="poppins-font min-h-screen bg-[#F4F7FF]">
+    <!-- navbar -->
     <header class="pt-7">
         <!-- nav left -->
         <div class="w-[85%] mx-auto bg-white p-4 rounded-xl flex justify-between">
-          <div class="flex h-[50px] items-center space-x-2">
+          <div class="flex h-[60px] items-center space-x-2">
             <img class="" src="./assets/logo.png" />
             <div class="text-4xl top-[6px] relative">
               Dev<span class="font-bold">Board</span>
@@ -33,9 +34,9 @@
               <div class="mr-4">
                 <img src="./assets/checkbox.png" />
               </div>
-              <p id="read" class="font-extrabold text-2xl text-center">23</p>
+              <p id="read" class="font-extrabold text-2xl text-center">24</p>
             </div>
-            <div class="bg-slate-100 rounded-full px-2 py-2 ml-8">
+            <div class="bg-slate-100 rounded-full px-2 py-3 ml-8">
               <button id="theme-changer">
                 <img src="./assets/theme-btn.png" />
               </button>
@@ -43,5 +44,25 @@
           </div>
         </div>
       </header>
+      <main class="grid grid-cols-5 w-[85%] mx-auto mt-5">
+        <div class="col-span-4 mr-5 bg-white rounded-xl">
+            <div class="grid grid-cols-5 m-4 h[120px]">
+                <div class="col-span-1 flex bg-slate-100 rounded-xl justify-center items-center">
+                    <div class="mr-4 bg-white p-3 rounded-2xl">
+                        <img src="assets/checkbox.png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-xs text-[#51595f] font-medium">Task Assigned</p>
+                        <p class="font-bold text-3xl">06</p>
+                    </div>
+                </div>
+                <button id="blogs-page"
+                class="text-left justify-center items-center mx-4 flex col-span-3 bg-linear-to-l from-purple-300 to-blue-500 rounded-xl">
+                <img src="assets/board.png" alt="">
+                <p class="text-white font-medium text-xl">Discover Something <br> New Today!</p>
+                </button>
+            </div>
+        </div>
+      </main>
 </body>
 </html>
