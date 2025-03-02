@@ -30,7 +30,7 @@ function addHistory(ID){
   const currentTime = new Date().toLocaleString(); 
   const mission =document.getElementById(ID).innerText;
   p.innerText = `Completed "${mission}" at ${currentTime}`; 
-  p.classList.add("p-2", "text-sm", "text-gray-700", "mx-2"); 
+  p.classList.add("p-3", "text-sm", "text-gray-600", "mx-3"); 
 
   historyContainer.appendChild(p);
 }

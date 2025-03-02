@@ -6,4 +6,4 @@ const date = new Date();
 
 
       document.getElementById("day").innerText = `${day} ,`;
-      document.getElementById("date").innerText = `${month} ${dayNum} ${year}`;
+      document.getElementById("date").innerText = `${month} ${dayNum} ${year}`; 
