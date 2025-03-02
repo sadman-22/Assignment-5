@@ -20,7 +20,7 @@
 <body class="poppins-font min-h-screen bg-[#F4F7FF]">
     <!-- navbar -->
     <header class="pt-7">
-        <!-- nav left -->
+        <!-- left -->
         <div class="w-[85%] mx-auto bg-white p-4 rounded-xl flex justify-between">
           <div class="flex h-[60px] items-center space-x-2">
             <img class="" src="./assets/logo.png" />
@@ -28,7 +28,7 @@
               Dev<span class="font-bold">Board</span>
             </div>
           </div>
-          <!-- nav right -->
+          <!-- right -->
           <div class="flex">
             <div class="flex items-center bg-slate-100 rounded-3xl px-3 py-2">
               <div class="mr-4">
@@ -65,172 +65,185 @@
                 <div class="grid-cols-1 bg-slate-100 rounded-xl flex justify-center items-center">
                     <img class=" bg-white p-3 rounded-3xl mr-4" src="./assets/calender.png" />
                     <p id="current-date"><div>
-                      <span id="day-part" class="text-2xl"></span>
+                      <span id="day" class="text-2xl"></span>
                       <br>
-                      <strong id="date-part" class="text-2xl"></strong>
+                      <strong id="date" class="text-2xl"></strong>
                   </div></p>
             </div>
         </div>
-        <!-- <hr class="border-t-2 border-dotted border-slate-100"> -->
         <!-- cards section -->
-         <div class="grid grid-cols-3">
-            <!-- card 1 -->
-            <div class="m-4 bg-slate-100 rounded-lg">
-                <div class="col-span-1 p-4">
-                  <div class="shop-name bg-white w-min p-1 rounded-lg">
-                    ShopEase
-                  </div>
-                  <div id="Mobile-button" class="card-title py-2">Fix Mobile Button Issue</div>
-                  <p class="bg-white text-[#51595f] h-14 line-clamp-2 px-4 py-2 my-2 rounded-lg">
-                    Ensure the button is visible, clickable, properly styled, has touch support,
-                     and is not blocked by elements.
-                  </p>
-                  <hr class="border-t-2 border-dotted border-slate-200 my-2" />
-                  <div class="flex justify-between">
-                    <div>
-                      <div class="font-normal text-xs text-[#51595f]">Deadline</div>
-                      <div class="font-medium text-[16px]">21 March 2025</div>
+             <div class="grid grid-cols-3">
+                <!-- card 1 -->
+                <div class="m-4 bg-slate-100 rounded-lg">
+                    <div class="col-span-1 p-4">
+                      <div class="shop-name bg-white w-min p-1 rounded-lg">
+                        ShopEase
+                      </div>
+                      <div id="Mobile-button" class="card-title py-2">Fix Mobile Button Issue</div>
+                      <p class="bg-white text-[#51595f] h-14 line-clamp-2 px-4 py-2 my-2 rounded-lg">
+                        Ensure the button is visible, clickable, properly styled, has touch support,
+                         and is not blocked by elements.
+                      </p>
+                      <hr class="border-t-2 border-dotted border-slate-200 my-2" />
+                      <div class="flex justify-between">
+                        <div>
+                          <div class="font-normal text-xs text-[#51595f]">Deadline</div>
+                          <div class="font-medium text-[16px]">21 March 2025</div>
+                        </div>
+                        <button id="mobile-button"
+                          onclick="updatePoint(); addHistory('Mobile-button');" 
+                          class="bg-blue-600 px-6 rounded-lg text-white h-10"
+                        >
+                          Completed
+                        </button>
+                      </div>
                     </div>
-                    <button id="mobile-button"
-                      onclick="updatePoint(); addHistory('Mobile-button');" 
-                      class="bg-blue-600 px-6 rounded-lg text-white h-10"
-                    >
-                      Completed
-                    </button>
+                  </div>
+                  <!-- card 2 -->
+                  <div class="m-4 bg-slate-100 rounded-lg">
+                    <div class="col-span-1 p-4">
+                      <div class="shop-name bg-white w-min p-1 rounded-lg">
+                        CloudSync
+                      </div>
+                      <div id="Mobile-button" class="card-title py-2">Add Dark Mode</div>
+                      <p class="bg-white text-[#51595f] h-14 line-clamp-2 px-4 py-2 my-2 rounded-lg">
+                        Ensure the button is visible, clickable, properly styled, has touch support,
+                         and is not blocked by elements.
+                      </p>
+                      <hr class="border-t-2 border-dotted border-slate-200 my-2" />
+                      <div class="flex justify-between">
+                        <div>
+                          <div class="font-normal text-xs text-[#51595f]">Deadline</div>
+                          <div class="font-medium text-[16px]">21 March 2025</div>
+                        </div>
+                        <button id="mobile-button"
+                          onclick="updatePoint(); addHistory('Mobile-button');" 
+                          class="bg-blue-600 px-6 rounded-lg text-white h-10"
+                        >
+                          Completed
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card 3 -->
+                  <div class="m-4 bg-slate-100 rounded-lg">
+                    <div class="col-span-1 p-4">
+                      <div class="shop-name bg-white w-min p-1 rounded-lg">
+                        SwiftPay
+                      </div>
+                      <div id="Mobile-button" class="card-title py-2">Optimize  Home page </div>
+                      <p class="bg-white text-[#51595f] h-14 line-clamp-2 px-4 py-2 my-2 rounded-lg">
+                        Ensure the button is visible, clickable, properly styled, has touch support,
+                         and is not blocked by elements.
+                      </p>
+                      <hr class="border-t-2 border-dotted border-slate-200 my-2" />
+                      <div class="flex justify-between">
+                        <div>
+                          <div class="font-normal text-xs text-[#51595f]">Deadline</div>
+                          <div class="font-medium text-[16px]">21 March 2025</div>
+                        </div>
+                        <button id="mobile-button"
+                          onclick="updatePoint(); addHistory('Mobile-button');" 
+                          class="bg-blue-600 px-6 rounded-lg text-white h-10"
+                        >
+                          Completed
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card 4 -->
+                  <div class="m-4 bg-slate-100 rounded-lg">
+                    <div class="col-span-1 p-4">
+                      <div class="shop-name bg-white w-min p-1 rounded-lg">
+                        Meta
+                      </div>
+                      <div id="Mobile-button" class="card-title py-2">Add new emoji 🤲</div>
+                      <p class="bg-white text-[#51595f] h-14 line-clamp-2 px-4 py-2 my-2 rounded-lg">
+                        Ensure the button is visible, clickable, properly styled, has touch support,
+                         and is not blocked by elements.
+                      </p>
+                      <hr class="border-t-2 border-dotted border-slate-200 my-2" />
+                      <div class="flex justify-between">
+                        <div>
+                          <div class="font-normal text-xs text-[#51595f]">Deadline</div>
+                          <div class="font-medium text-[16px]">21 March 2025</div>
+                        </div>
+                        <button id="mobile-button"
+                          onclick="updatePoint(); addHistory('Mobile-button');" 
+                          class="bg-blue-600 px-6 rounded-lg text-white h-10"
+                        >
+                          Completed
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card 5 -->
+                  <div class="m-4 bg-slate-100 rounded-lg">
+                    <div class="col-span-1 p-4">
+                      <div class="shop-name bg-white w-min p-1 rounded-lg">
+                        GoogleLLC
+                      </div>
+                      <div id="Mobile-button" class="card-title py-2">Integrate OpenAI API </div>
+                      <p class="bg-white text-[#51595f] h-14 line-clamp-2 px-4 py-2 my-2 rounded-lg">
+                        Ensure the button is visible, clickable, properly styled, has touch support,
+                         and is not blocked by elements.
+                      </p>
+                      <hr class="border-t-2 border-dotted border-slate-200 my-2" />
+                      <div class="flex justify-between">
+                        <div>
+                          <div class="font-normal text-xs text-[#51595f]">Deadline</div>
+                          <div class="font-medium text-[16px]">21 March 2025</div>
+                        </div>
+                        <button id="mobile-button"
+                          onclick="updatePoint(); addHistory('Mobile-button');" 
+                          class="bg-blue-600 px-6 rounded-lg text-white h-10"
+                        >
+                          Completed
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card 6 -->
+                  <div class="m-4 bg-slate-100 rounded-lg">
+                    <div class="col-span-1 p-4">
+                      <div class="shop-name bg-white w-min p-1 rounded-lg">
+                        Glassdoar
+                      </div>
+                      <div id="Mobile-button" class="card-title py-2">Improve Job searching </div>
+                      <p class="bg-white text-[#51595f] h-14 line-clamp-2 px-4 py-2 my-2 rounded-lg">
+                        Ensure the button is visible, clickable, properly styled, has touch support,
+                         and is not blocked by elements.
+                      </p>
+                      <hr class="border-t-2 border-dotted border-slate-200 my-2" />
+                      <div class="flex justify-between">
+                        <div>
+                          <div class="font-normal text-xs text-[#51595f]">Deadline</div>
+                          <div class="font-medium text-[16px]">21 March 2025</div>
+                        </div>
+                        <button id="mobile-button"
+                          onclick="updatePoint(); addHistory('Mobile-button');" 
+                          class="bg-blue-600 px-6 rounded-lg text-white h-10"
+                        >
+                          Completed
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- card 2 -->
-              <div class="m-4 bg-slate-100 rounded-lg">
-                <div class="col-span-1 p-4">
-                  <div class="shop-name bg-white w-min p-1 rounded-lg">
-                    ShopEase
-                  </div>
-                  <div id="Mobile-button" class="card-title py-2">Fix Mobile Button Issue</div>
-                  <p class="bg-white text-[#51595f] h-14 line-clamp-2 px-4 py-2 my-2 rounded-lg">
-                    Ensure the button is visible, clickable, properly styled, has touch support,
-                     and is not blocked by elements.
-                  </p>
-                  <hr class="border-t-2 border-dotted border-slate-200 my-2" />
-                  <div class="flex justify-between">
-                    <div>
-                      <div class="font-normal text-xs text-[#51595f]">Deadline</div>
-                      <div class="font-medium text-[16px]">21 March 2025</div>
-                    </div>
-                    <button id="mobile-button"
-                      onclick="updatePoint(); addHistory('Mobile-button');" 
-                      class="bg-blue-600 px-6 rounded-lg text-white h-10"
-                    >
-                      Completed
-                    </button>
-                  </div>
+                <!-- history part -->
+                <div>
+                    <div class="flex flex-col items-center my-4">
+                        <div class="flex">
+                          <img class="h-[24px] w-[24px]" src="assets/activity.png" alt=""/>
+                          <p>Activity Log</p>
+                        </div>
+                        <button id="clear-history" class="my-4 bg-blue-600 px-6 rounded-lg text-white h-10">
+                          Clear History
+                        </button>
+                      </div>
+                      <div id="history-container"></div>
                 </div>
-              </div>
-              <!-- card 3 -->
-              <div class="m-4 bg-slate-100 rounded-lg">
-                <div class="col-span-1 p-4">
-                  <div class="shop-name bg-white w-min p-1 rounded-lg">
-                    ShopEase
-                  </div>
-                  <div id="Mobile-button" class="card-title py-2">Fix Mobile Button Issue</div>
-                  <p class="bg-white text-[#51595f] h-14 line-clamp-2 px-4 py-2 my-2 rounded-lg">
-                    Ensure the button is visible, clickable, properly styled, has touch support,
-                     and is not blocked by elements.
-                  </p>
-                  <hr class="border-t-2 border-dotted border-slate-200 my-2" />
-                  <div class="flex justify-between">
-                    <div>
-                      <div class="font-normal text-xs text-[#51595f]">Deadline</div>
-                      <div class="font-medium text-[16px]">21 March 2025</div>
-                    </div>
-                    <button id="mobile-button"
-                      onclick="updatePoint(); addHistory('Mobile-button');" 
-                      class="bg-blue-600 px-6 rounded-lg text-white h-10"
-                    >
-                      Completed
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- card 4 -->
-              <div class="m-4 bg-slate-100 rounded-lg">
-                <div class="col-span-1 p-4">
-                  <div class="shop-name bg-white w-min p-1 rounded-lg">
-                    ShopEase
-                  </div>
-                  <div id="Mobile-button" class="card-title py-2">Fix Mobile Button Issue</div>
-                  <p class="bg-white text-[#51595f] h-14 line-clamp-2 px-4 py-2 my-2 rounded-lg">
-                    Ensure the button is visible, clickable, properly styled, has touch support,
-                     and is not blocked by elements.
-                  </p>
-                  <hr class="border-t-2 border-dotted border-slate-200 my-2" />
-                  <div class="flex justify-between">
-                    <div>
-                      <div class="font-normal text-xs text-[#51595f]">Deadline</div>
-                      <div class="font-medium text-[16px]">21 March 2025</div>
-                    </div>
-                    <button id="mobile-button"
-                      onclick="updatePoint(); addHistory('Mobile-button');" 
-                      class="bg-blue-600 px-6 rounded-lg text-white h-10"
-                    >
-                      Completed
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- card 5 -->
-              <div class="m-4 bg-slate-100 rounded-lg">
-                <div class="col-span-1 p-4">
-                  <div class="shop-name bg-white w-min p-1 rounded-lg">
-                    ShopEase
-                  </div>
-                  <div id="Mobile-button" class="card-title py-2">Fix Mobile Button Issue</div>
-                  <p class="bg-white text-[#51595f] h-14 line-clamp-2 px-4 py-2 my-2 rounded-lg">
-                    Ensure the button is visible, clickable, properly styled, has touch support,
-                     and is not blocked by elements.
-                  </p>
-                  <hr class="border-t-2 border-dotted border-slate-200 my-2" />
-                  <div class="flex justify-between">
-                    <div>
-                      <div class="font-normal text-xs text-[#51595f]">Deadline</div>
-                      <div class="font-medium text-[16px]">21 March 2025</div>
-                    </div>
-                    <button id="mobile-button"
-                      onclick="updatePoint(); addHistory('Mobile-button');" 
-                      class="bg-blue-600 px-6 rounded-lg text-white h-10"
-                    >
-                      Completed
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- card 6 -->
-              <div class="m-4 bg-slate-100 rounded-lg">
-                <div class="col-span-1 p-4">
-                  <div class="shop-name bg-white w-min p-1 rounded-lg">
-                    ShopEase
-                  </div>
-                  <div id="Mobile-button" class="card-title py-2">Fix Mobile Button Issue</div>
-                  <p class="bg-white text-[#51595f] h-14 line-clamp-2 px-4 py-2 my-2 rounded-lg">
-                    Ensure the button is visible, clickable, properly styled, has touch support,
-                     and is not blocked by elements.
-                  </p>
-                  <hr class="border-t-2 border-dotted border-slate-200 my-2" />
-                  <div class="flex justify-between">
-                    <div>
-                      <div class="font-normal text-xs text-[#51595f]">Deadline</div>
-                      <div class="font-medium text-[16px]">21 March 2025</div>
-                    </div>
-                    <button id="mobile-button"
-                      onclick="updatePoint(); addHistory('Mobile-button');" 
-                      class="bg-blue-600 px-6 rounded-lg text-white h-10"
-                    >
-                      Completed
-                    </button>
-                  </div>
-                </div>
-              </div>
-         </div>
       </main>
+      <script src="script/script.js"></script>
 </body>
 </html>
