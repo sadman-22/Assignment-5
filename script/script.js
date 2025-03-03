@@ -1,4 +1,4 @@
-// mission increment and decrement
+// increment and decrement
 function updatePoint() {
     let mission = document.getElementById("complete-mission");
     let read = document.getElementById("read");

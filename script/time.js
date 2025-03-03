@@ -4,6 +4,5 @@ const date = new Date();
        const dayNum = date.getDate(); 
        const year = date.getFullYear();
 
-
       document.getElementById("day").innerText = `${day} ,`;
       document.getElementById("date").innerText = `${month} ${dayNum} ${year}`; 

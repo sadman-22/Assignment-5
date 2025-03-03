@@ -13,3 +13,4 @@ function addHistory(ID){
     const historyContainer = document.getElementById("history-container");
     historyContainer.innerHTML = "";
   });
+  
