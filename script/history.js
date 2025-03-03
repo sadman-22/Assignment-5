@@ -1,5 +1,5 @@
 function addHistory(ID){
-    const historyContainer = document.getElementById("history-container"); 
+    const historyContainer = document.getElementById("history"); 
     const p = document.createElement("p");
     const currentTime = new Date().toLocaleString(); 
     const mission =document.getElementById(ID).innerText;
@@ -10,7 +10,7 @@ function addHistory(ID){
   }
   
   document.getElementById("clear-history").addEventListener("click", function() {
-    const historyContainer = document.getElementById("history-container");
+    const historyContainer = document.getElementById("history");
     historyContainer.innerHTML = "";
   });
   
