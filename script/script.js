@@ -1,4 +1,4 @@
-// read and mission increament and decreament
+// mission increment and decrement
 function updatePoint() {
     let mission = document.getElementById("complete-mission");
     let read = document.getElementById("read");
@@ -19,44 +19,7 @@ function updatePoint() {
     }
   }
 
-  // redirecting from home page
+  // blog page
   document.getElementById("blog-page").addEventListener("click",function(){
     window.location.href = "./blog.html"
 })
-
-function addHistory(ID){
-  const historyContainer = document.getElementById("history-container"); 
-  const p = document.createElement("p");
-  const currentTime = new Date().toLocaleString(); 
-  const mission =document.getElementById(ID).innerText;
-  p.innerText = `Completed "${mission}" at ${currentTime}`; 
-  p.classList.add("p-3", "text-sm", "text-gray-600", "mx-3"); 
-
-  historyContainer.appendChild(p);
-}
-
-document.getElementById("clear-history").addEventListener("click", function() {
-  const historyContainer = document.getElementById("history-container");
-  historyContainer.innerHTML = "";
-});
-
-      // theme changing
-    //   let themeButton = document.getElementById("theme-changer");
-    //   themeButton.addEventListener("click", function () {
-    //     const body = document.body;
-    //     let randomColor = `#${Math.floor(Math.random() * 12345678).toString(
-    //       16
-    //     )}`;
-    //     body.style.backgroundColor = randomColor;
-    //   });
-
-      // the time part
-    //   const date = new Date();
-    //   const day = date.toLocaleDateString('en-US', { weekday: 'short' }); 
-    //   const month = date.toLocaleDateString('en-US', { month: 'short' }); 
-    //    const dayNum = date.getDate(); 
-    //    const year = date.getFullYear();
-
-
-    //   document.getElementById("day").innerText = `${day} ,`;
-    //   document.getElementById("date").innerText = `${month} ${dayNum} ${year}`;
