@@ -20,7 +20,7 @@ function updatePoint() {
   }
 
   // redirecting from home page
-  document.getElementById("blogs-page").addEventListener("click",function(){
+  document.getElementById("blog-page").addEventListener("click",function(){
     window.location.href = "./blog.html"
 })
 
